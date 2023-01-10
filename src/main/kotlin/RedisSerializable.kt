@@ -63,9 +63,6 @@ abstract class RedisDao(private val redis:Class<out RedisSerializable>){
 
 }
 
-
-
-
 fun<T> serialize(value:T):String{
     return value.toString()
 }

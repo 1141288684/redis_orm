@@ -16,12 +16,4 @@ object KRedis {
     }
 
 
-    suspend fun mget(vararg keys: String):List<String?>{
-        return client.mget(*keys)
-    }
-
-    suspend fun hmget(key: String, field: String, vararg fields: String): List<String?>{
-        return client.hmget(key, field, *fields)
-    }
-
 }
